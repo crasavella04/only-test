@@ -1,0 +1,51 @@
+.container {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  width: max-content;
+
+  @media (max-width: 1480px) {
+    & {
+      max-width: 300px;
+      min-width: auto;
+    }
+  }
+
+  @media (max-width: 1240px) {
+    max-width: 270px;
+  }
+
+  @media (max-width: 520px) {
+    max-width: 166px;
+  }
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 400;
+  color: #3877ee;
+
+  font-family: Bebas Neue;
+  line-height: 30px;
+
+  @media (max-width: 520px) {
+    font-size: 16px;
+  }
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  @media (max-width: 1240px) {
+    & {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 520px) {
+    font-size: 14px;
+  }
+}
